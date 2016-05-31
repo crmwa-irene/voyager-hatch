@@ -1,6 +1,7 @@
 <?php
 $mod_strings['LBL_ACCOUNT_DESCRIPTION'] = 'Company Description';
 $mod_strings['LBL_ACCOUNT_ID'] = 'Company ID';
+$mod_strings['LBL_LIST_ACCOUNT_NAME'] = 'Company Name';
 $mod_strings['LBL_ACCOUNT_NAME'] = 'Company Name';
 $mod_strings['LBL_ASSIGNED_TO'] = 'Account Manager';
 $mod_strings['LBL_ASSIGNED_TO_ID'] = 'Account Manager';
