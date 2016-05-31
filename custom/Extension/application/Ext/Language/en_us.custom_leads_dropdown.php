@@ -1,0 +1,69 @@
+<?php
+$app_list_strings['lead_cluster_list'][''] = '';
+$app_list_strings['lead_cluster_list']['1'] = '1';
+$app_list_strings['lead_cluster_list']['2'] = '2';
+$app_list_strings['lead_cluster_list']['3'] = '3';
+$app_list_strings['lead_cluster_list']['4'] = '4';
+$app_list_strings['lead_cluster_list']['5'] = '5';
+
+$app_list_strings['lead_industries_list'] = array();
+$app_list_strings['lead_industries_list'][''] = '';
+$app_list_strings['lead_industries_list']['online_business'] = 'Online Business';
+$app_list_strings['lead_industries_list']['retail'] = 'Retail';
+$app_list_strings['lead_industries_list']['food_and_beverage'] = 'Food and Beverage';
+$app_list_strings['lead_industries_list']['digital_media_agency'] = 'Digital Media Agency';
+$app_list_strings['lead_industries_list']['bpo'] = 'BPO';
+$app_list_strings['lead_industries_list']['professional_services'] = 'Professional Services';
+$app_list_strings['lead_industries_list']['real_estate'] = 'Real Estate';
+$app_list_strings['lead_industries_list']['health_pharma'] = 'Health/Pharma';
+$app_list_strings['lead_industries_list']['entertainment'] = 'Entertainment';
+$app_list_strings['lead_industries_list']['computer_hardware_electronics'] = 'Computer Hardware Electronics';
+$app_list_strings['lead_industries_list']['techmobile_apps'] = 'Tech-Mobile Apps';
+$app_list_strings['lead_industries_list']['information_technology_services'] = 'Information Technology and Services';
+$app_list_strings['lead_industries_list']['telecommunications'] = 'Telecommunications';
+$app_list_strings['lead_industries_list']['travel'] = 'Travel';
+$app_list_strings['lead_industries_list']['airlines'] = 'Airlines';
+$app_list_strings['lead_industries_list']['trading'] = 'Trading';
+$app_list_strings['lead_industries_list']['education'] = 'Education';
+$app_list_strings['lead_industries_list']['manufacturing_and_logistics'] = 'Manufacturing and Logistics';
+$app_list_strings['lead_industries_list']['digital_marketing'] = 'Digital Marketing';
+$app_list_strings['lead_industries_list']['malls'] = 'Malls';
+$app_list_strings['lead_industries_list']['banking_and_finance'] = 'Banking and Finance';
+
+$app_list_strings['priority_merged_industries_list'] = array();
+$app_list_strings['priority_merged_industries_list'][''] = '';
+$app_list_strings['priority_merged_industries_list']['transpo_hospitality_travel'] = 'Transpo, Hospitality and Travel';
+$app_list_strings['priority_merged_industries_list']['fmcg'] = 'FMCG';
+$app_list_strings['priority_merged_industries_list']['education'] = 'Education';
+$app_list_strings['priority_merged_industries_list']['property_and_real_estate'] = 'Property and Real Estate';
+$app_list_strings['priority_merged_industries_list']['bpo'] = 'BPO';
+$app_list_strings['priority_merged_industries_list']['health_pharma'] = 'Health/Pharma';
+$app_list_strings['priority_merged_industries_list']['retail'] = 'Retail';
+$app_list_strings['priority_merged_industries_list']['banking_and_finance'] = 'Banking and Finance';
+$app_list_strings['priority_merged_industries_list']['insurance'] = 'Insurance';
+$app_list_strings['priority_merged_industries_list']['others'] = 'Others';
+
+$app_list_strings['custom_lead_source_list'] = array();
+$app_list_strings['custom_lead_source_list'][''] = '';
+$app_list_strings['custom_lead_source_list']['employee'] = 'Employee Name';
+$app_list_strings['custom_lead_source_list']['trade_show'] = 'Trade Show';
+$app_list_strings['custom_lead_source_list']['cold_call'] = 'Cold Call';
+$app_list_strings['custom_lead_source_list']['direct_mail'] = 'Direct Mail';
+$app_list_strings['custom_lead_source_list']['word_of_mouth'] = 'Word of Mouth';
+$app_list_strings['custom_lead_source_list']['other'] = 'Other';
+
+$app_list_strings['custom_sales_stage_list'] = array();
+$app_list_strings['custom_sales_stage_list']['Attempted'] = 'Attempted';
+$app_list_strings['custom_sales_stage_list']['In Dialogue Presented'] = 'In-dialogue (Presented)';
+$app_list_strings['custom_sales_stage_list']['In Dialogue Negotiating'] = 'In-dialogue (Negotiating)';
+$app_list_strings['custom_sales_stage_list']['In Dialogue Onboarding'] = 'In-dialogue (Onboarding)';
+$app_list_strings['custom_sales_stage_list']['Closed Won'] = 'Closed Won';
+$app_list_strings['custom_sales_stage_list']['Closed Lost'] = 'Closed Lost';
+
+$app_list_strings['custom_probability_dom'] = array();
+$app_list_strings['custom_probability_dom']['Attempted'] = '10';
+$app_list_strings['custom_probability_dom']['In Dialogue Presented'] = '30';
+$app_list_strings['custom_probability_dom']['In Dialogue Negotiating'] = '80';
+$app_list_strings['custom_probability_dom']['In Dialogue Onboarding'] = '90';
+$app_list_strings['custom_probability_dom']['Closed Won'] = '100';
+$app_list_strings['custom_probability_dom']['Closed Lost'] = '0';
