@@ -217,113 +217,16 @@ array (
                 'base_rate_field' => 'base_rate',
                 'span' => 6,
               ),
-              6 => 
-              array (
-                'name' => 'best_case',
-                'type' => 'currency',
-                'label' => 'LBL_BEST',
-                'related_fields' => 
-                array (
-                  0 => 'best_case',
-                  1 => 'currency_id',
-                  2 => 'base_rate',
-                ),
-                'currency_field' => 'currency_id',
-                'base_rate_field' => 'base_rate',
-              ),
-              7 => 
-              array (
-                'name' => 'worst_case',
-                'type' => 'currency',
-                'label' => 'LBL_WORST',
-                'related_fields' => 
-                array (
-                  0 => 'worst_case',
-                  1 => 'currency_id',
-                  2 => 'base_rate',
-                ),
-                'currency_field' => 'currency_id',
-                'base_rate_field' => 'base_rate',
-              ),
-              8 => 'next_step',
-              9 => 
+              6 => 'assigned_user_name',
+              7 => 'next_step',
+              8 => 
               array (
                 'name' => 'tag',
-                'span' => 12,
+                'span' => 6,
               ),
-            ),
-          ),
-          2 => 
-          array (
-            'name' => 'panel_hidden',
-            'label' => 'LBL_RECORD_SHOWMORE',
-            'hide' => true,
-            'labelsOnTop' => true,
-            'placeholders' => true,
-            'columns' => 2,
-            'newTab' => false,
-            'panelDefault' => 'expanded',
-            'fields' => 
-            array (
-              0 => 
+              9 => 
               array (
-                'name' => 'opportunity_type',
-                'span' => 12,
-              ),
-              1 => 'lead_source',
-              2 => 'campaign_name',
-              3 => 
-              array (
-                'name' => 'description',
-                'span' => 12,
-              ),
-              4 => 'assigned_user_name',
-              5 => 'team_name',
-              6 => 
-              array (
-                'name' => 'date_entered_by',
-                'readonly' => true,
-                'type' => 'fieldset',
-                'label' => 'LBL_DATE_ENTERED',
-                'fields' => 
-                array (
-                  0 => 
-                  array (
-                    'name' => 'date_entered',
-                  ),
-                  1 => 
-                  array (
-                    'type' => 'label',
-                    'default_value' => 'LBL_BY',
-                  ),
-                  2 => 
-                  array (
-                    'name' => 'created_by_name',
-                  ),
-                ),
-              ),
-              7 => 
-              array (
-                'name' => 'date_modified_by',
-                'readonly' => true,
-                'type' => 'fieldset',
-                'label' => 'LBL_DATE_MODIFIED',
-                'fields' => 
-                array (
-                  0 => 
-                  array (
-                    'name' => 'date_modified',
-                  ),
-                  1 => 
-                  array (
-                    'type' => 'label',
-                    'default_value' => 'LBL_BY',
-                  ),
-                  2 => 
-                  array (
-                    'name' => 'modified_by_name',
-                  ),
-                ),
+                'span' => 6,
               ),
             ),
           ),

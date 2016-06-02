@@ -1,6 +1,6 @@
 <?php
 $dictionary['Lead']['fields']['priority_merged_industries'] = array(
-    'required' => true,
+    'required' => false,
     'name' => 'priority_merged_industries',
     'vname' => 'LBL_PRIORITY_MERGED_INDUSTRIES',
     'type' => 'enum',
@@ -21,5 +21,5 @@ $dictionary['Lead']['fields']['priority_merged_industries'] = array(
     'options' => 'priority_merged_industries_list',
     'studio' => 'visible',
     'dependency' => false,
-    'readonly' => false,
+    'readonly' => true,
 );

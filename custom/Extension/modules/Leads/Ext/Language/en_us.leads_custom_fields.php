@@ -14,3 +14,4 @@ $mod_strings['LBL_CLUSTER'] = 'Cluster';
 $mod_strings['LBL_INDUSTRY'] = 'Industry';
 $mod_strings['LBL_PRIORITY_MERGED_INDUSTRIES'] = 'Priority Merged Industries';
 $mod_strings['LBL_EMPL_TRADESHOW_NAME'] = 'Name';
+$mod_strings['LBL_MEDIA_AGENCY'] = 'Media Agency';

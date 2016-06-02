@@ -1,8 +1,8 @@
 <?php
-$dictionary['Lead']['fields']['cluster'] = array(
+$dictionary['Lead']['fields']['media_agency'] = array(
     'required' => false,
-    'name' => 'cluster',
-    'vname' => 'LBL_CLUSTER',
+    'name' => 'media_agency',
+    'vname' => 'LBL_MEDIA_AGENCY',
     'type' => 'enum',
     'massupdate' => true,
     'default' => '',
@@ -18,8 +18,8 @@ $dictionary['Lead']['fields']['cluster'] = array(
     'calculated' => false,
     'len' => 100,
     'size' => '30',
-    'options' => 'lead_cluster_list',
+    'options' => 'lead_media_agency_list',
     'studio' => 'visible',
     'dependency' => false,
-    'readonly' => true,
+    'readonly' => false,
 );

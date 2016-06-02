@@ -19,7 +19,7 @@ $dictionary['Lead']['fields']['employee_tradeshow_name'] =  array(
     'len' => 100,
     'size' => '20',
     'studio' => 'visible',
-    'dependency' => 'or(equal($lead_source,"employee"),equal($lead_source,"trade_show"))',
+    'dependency' => 'or(equal($lead_source,"employee"),equal($lead_source,"trade_show"),equal($lead_source,"sales_channel"),equal($lead_source,"pldt_alpha"),equal($lead_source,"pldt_sme"),equal($lead_source,"other"))',
 );
 
  ?>
