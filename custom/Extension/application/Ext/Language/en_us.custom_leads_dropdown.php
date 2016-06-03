@@ -102,16 +102,16 @@ $app_list_strings['custom_lead_source_list']['pldt_sme'] = 'PLDT SME';
 $app_list_strings['custom_sales_stage_list'] = array();
 $app_list_strings['custom_sales_stage_list']['Attempted'] = 'Attempted';
 $app_list_strings['custom_sales_stage_list']['In Dialogue Presented'] = 'In-dialogue (Presented)';
-$app_list_strings['custom_sales_stage_list']['In Dialogue Negotiating'] = 'In-dialogue (Negotiating 50-50)';
-$app_list_strings['custom_sales_stage_list']['In Dialogue Onboarding'] = 'In-dialogue (Onboarding 80%)';
+$app_list_strings['custom_sales_stage_list']['In Dialogue Negotiating50'] = 'In-dialogue (Negotiating 50-50)';
+$app_list_strings['custom_sales_stage_list']['In Dialogue Negotiating80'] = 'In-dialogue (Negotiating 80%)';
 $app_list_strings['custom_sales_stage_list']['Closed Won'] = 'Closed Won';
 $app_list_strings['custom_sales_stage_list']['Closed Lost'] = 'Closed Lost';
 
 $app_list_strings['custom_probability_dom'] = array();
 $app_list_strings['custom_probability_dom']['Attempted'] = '10';
 $app_list_strings['custom_probability_dom']['In Dialogue Presented'] = '30';
-$app_list_strings['custom_probability_dom']['In Dialogue Negotiating'] = '50';
-$app_list_strings['custom_probability_dom']['In Dialogue Onboarding'] = '80';
+$app_list_strings['custom_probability_dom']['In Dialogue Negotiating50'] = '50';
+$app_list_strings['custom_probability_dom']['In Dialogue Negotiating80'] = '80';
 $app_list_strings['custom_probability_dom']['Closed Won'] = '100';
 $app_list_strings['custom_probability_dom']['Closed Lost'] = '0';
 
