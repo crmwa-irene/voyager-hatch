@@ -4,7 +4,7 @@ $dictionary['Lead']['fields']['cluster'] = array(
     'name' => 'cluster',
     'vname' => 'LBL_CLUSTER',
     'type' => 'enum',
-    'massupdate' => true,
+    'massupdate' => false,
     'default' => '',
     'comments' => '',
     'help' => '',
@@ -22,4 +22,53 @@ $dictionary['Lead']['fields']['cluster'] = array(
     'studio' => 'visible',
     'dependency' => false,
     'readonly' => true,
+    'visibility_grid' => array (
+        'trigger' => 'priority_merged_industries',
+        'values' =>
+            array (
+                '' =>
+                    array (
+                    ),
+                'transpo_hospitality_travel' =>
+                    array (
+                        0 => '2',
+                    ),
+                'fmcg' =>
+                    array (
+                        0 => '3',
+                    ),
+                'education' =>
+                    array (
+                        0 => '3',
+                    ),
+                'property_and_real_estate' =>
+                    array (
+                        0 => '1',
+                    ),
+                'bpo' =>
+                    array (
+                        0 => '1',
+                    ),
+                'health_pharma' =>
+                    array (
+                        0 => '4',
+                    ),
+                'retail' =>
+                    array (
+                        0 => '5',
+                    ),
+                'banking_and_finance' =>
+                    array (
+                        0 => '2',
+                    ),
+                'insurance' =>
+                    array (
+                        0 => '4',
+                    ),
+                'others' =>
+                    array (
+                        0 => '5',
+                    ),
+            ),
+    )
 );
