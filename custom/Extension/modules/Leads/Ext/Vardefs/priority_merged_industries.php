@@ -110,7 +110,7 @@ $dictionary['Lead']['fields']['priority_merged_industries'] = array(
                     array (
                         0 => 'others',
                     ),
-                'ConsultingBusinessManagement)' =>
+                'ConsultingBusinessManagement' =>
                     array (
                         0 => 'others',
                     ),
