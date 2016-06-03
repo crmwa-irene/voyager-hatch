@@ -26,3 +26,7 @@ $mod_strings['LNK_IMPORT_ACCOUNTS'] = 'Import Companies';
 $mod_strings['LNK_NEW_ACCOUNT'] = 'Create Company';
 $mod_strings['MSG_DUPLICATE'] = 'The Company record you are about to create might be a duplicate of an Company record that already exists. Company records containing similar names are listed below.Click Create Company to continue creating this new Company, or select an existing Company listed below.';
 $mod_strings['MSG_SHOW_DUPLICATES'] = 'The Company record you are about to create might be a duplicate of an Company record that already exists. Company records containing similar names are listed below.Click Save to continue creating this new Company, or click Cancel to return to the module without creating the Company.';
+$mod_strings['LBL_ASSIGNED_TO_ID'] = 'Account Manager';
+$mod_strings['LBL_ASSIGNED_TO'] = 'Account Manager';
+$mod_strings['LBL_ASSIGNED_TO_NAME'] = 'Account Manager';
+$mod_strings['LBL_LIST_ASSIGNED_USER'] = 'Account Manager';
