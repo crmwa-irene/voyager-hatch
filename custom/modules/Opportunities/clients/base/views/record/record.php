@@ -219,15 +219,6 @@ array (
               ),
               6 => 'assigned_user_name',
               7 => 'next_step',
-              8 => 
-              array (
-                'name' => 'tag',
-                'span' => 6,
-              ),
-              9 => 
-              array (
-                'span' => 6,
-              ),
             ),
           ),
         ),

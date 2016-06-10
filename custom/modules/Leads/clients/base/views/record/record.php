@@ -236,6 +236,7 @@ array (
               array (
                 'name' => 'employee_tradeshow_name',
                 'studio' => 'visible',
+                'placeholder' => 'LBL_PLEASE_SPECIFY',
                 'label' => 'LBL_EMPL_TRADESHOW_NAME',
               ),
               8 => 

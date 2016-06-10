@@ -204,16 +204,17 @@ array (
             array (
               0 => 'title',
               1 => 'phone_mobile',
-              2 => 'department',
-              3 => 'do_not_call',
-              4 => 'account_name',
-              5 => 'email',
-              6 => 'phone_fax',
-              7 => 'phone_work',
-              8 => 'report_to_name',
-              9 => 'sync_contact',
-              10 => 'lead_source',
-              11 => 'assigned_user_name',
+              2 => 'account_name',
+              3 => 'email',
+              4 => 'lead_source',
+              5 => 'assigned_user_name',
+              6 => 
+              array (
+                'name' => 'report_to_name',
+              ),
+              7 => 
+              array (
+              ),
             ),
           ),
         ),

@@ -65,6 +65,15 @@ $dictionary['Lead']['fields']['cluster'] = array(
                     array (
                         0 => '4',
                     ),
+                'Internal' =>
+                    array (
+                        0 => '',
+                        1 => '1',
+                        2 => '2',
+                        3 => '3',
+                        4 => '4',
+                        5 => '5',
+                    ),
                 'others' =>
                     array (
                         0 => '5',

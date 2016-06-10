@@ -236,7 +236,7 @@ $dictionary['Lead']['fields']['priority_merged_industries'] = array(
                     ),
                 'malls' =>
                     array (
-                        0 => 'retail',
+                        0 => 'property_and_real_estate',
                     ),
                 'MobilePhone' =>
                     array (

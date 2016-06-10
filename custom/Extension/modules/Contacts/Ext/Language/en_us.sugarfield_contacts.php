@@ -8,3 +8,4 @@ $mod_strings['LBL_ASSIGNED_TO'] = 'Account Manager';
 $mod_strings['LBL_ASSIGNED_TO_NAME'] = 'Account Manager';
 $mod_strings['LBL_LIST_ASSIGNED_USER'] = 'Account Manager';
 $mod_strings['LBL_TITLE'] = 'Job Title:';
+$mod_strings['LBL_MOBILE_PHONE'] = 'Contact Number:';

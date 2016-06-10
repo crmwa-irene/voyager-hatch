@@ -183,15 +183,9 @@ array (
               0 => 'website',
               1 => 'industry',
               2 => 'phone_office',
-              3 => 
-              array (
-                'name' => 'phone_alternate',
-                'label' => 'LBL_PHONE_ALT',
-              ),
-              4 => 'email',
-              5 => 'phone_fax',
-              6 => 'parent_name',
-              7 => 'assigned_user_name',
+              3 => 'email',
+              4 => 'parent_name',
+              5 => 'assigned_user_name',
             ),
           ),
         ),
