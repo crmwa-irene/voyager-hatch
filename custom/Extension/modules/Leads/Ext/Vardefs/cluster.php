@@ -21,7 +21,7 @@ $dictionary['Lead']['fields']['cluster'] = array(
     'options' => 'lead_cluster_list',
     'studio' => 'visible',
     'dependency' => false,
-    'readonly' => true,
+    'readonly' => false,
     'visibility_grid' => array (
         'trigger' => 'industry',
         'values' =>
@@ -244,7 +244,7 @@ $dictionary['Lead']['fields']['cluster'] = array(
                     ),
                 'malls' =>
                     array (
-                        0 => '5',
+                        0 => '1',
                     ),
                 'MobilePhone' =>
                     array (
