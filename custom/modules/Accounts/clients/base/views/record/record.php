@@ -182,10 +182,24 @@ array (
             array (
               0 => 'website',
               1 => 'industry',
-              2 => 'phone_office',
-              3 => 'email',
-              4 => 'parent_name',
-              5 => 'assigned_user_name',
+              2 => 
+              array (
+                'name' => 'priority_merged_industries',
+                'studio' => 'visible',
+                'readonly' => false,
+                'label' => 'LBL_PRIORITY_MERGED_INDUSTRIES',
+              ),
+              3 => 
+              array (
+                'name' => 'cluster',
+                'studio' => 'visible',
+                'readonly' => false,
+                'label' => 'LBL_CLUSTER',
+              ),
+              4 => 'phone_office',
+              5 => 'email',
+              6 => 'parent_name',
+              7 => 'assigned_user_name',
             ),
           ),
         ),

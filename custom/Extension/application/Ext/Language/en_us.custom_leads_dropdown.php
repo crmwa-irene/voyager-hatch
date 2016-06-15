@@ -140,3 +140,9 @@ $app_list_strings['lead_media_agency_list']['TouchBPN'] = 'Touch BPN';
 $app_list_strings['lead_media_agency_list']['Jump'] = 'Jump';
 $app_list_strings['lead_media_agency_list']['Maxus'] = 'Maxus';
 $app_list_strings['lead_media_agency_list']['MEC'] = 'MEC';
+
+$app_list_strings['custom_lead_status_dom'] = array();
+$app_list_strings['custom_lead_status_dom'][''] = '';
+$app_list_strings['custom_lead_status_dom']['New'] = 'New';
+$app_list_strings['custom_lead_status_dom']['Attempted'] = 'Attempted';
+$app_list_strings['custom_lead_status_dom']['Converted'] = 'Converted';

@@ -1,5 +1,5 @@
 <?php
-$dictionary['Lead']['fields']['cluster'] = array(
+$dictionary['Account']['fields']['cluster'] = array(
     'required' => false,
     'name' => 'cluster',
     'vname' => 'LBL_CLUSTER',

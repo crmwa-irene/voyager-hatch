@@ -263,7 +263,8 @@ array (
                 'studio' => 'visible',
                 'label' => 'LBL_MEDIA_AGENCY',
               ),
-              12 => 
+              12 => 'status',
+              13 => 
               array (
                 'name' => 'description',
                 'span' => 12,

@@ -207,14 +207,17 @@ array (
               2 => 'account_name',
               3 => 'email',
               4 => 'lead_source',
-              5 => 'assigned_user_name',
+              5 => 
+              array (
+                'name' => 'employee_tradeshow_name',
+                'studio' => 'visible',
+                'label' => 'LBL_EMPL_TRADESHOW_NAME',
+              ),
               6 => 
               array (
                 'name' => 'report_to_name',
               ),
-              7 => 
-              array (
-              ),
+              7 => 'assigned_user_name',
             ),
           ),
         ),
