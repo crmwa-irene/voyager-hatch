@@ -1,2 +1,2 @@
 <?php
-$dictionary['Contact']['fields']['assigned_user_name']['readonly']=true;
+$dictionary['Contact']['fields']['assigned_user_name']['readonly']=false;

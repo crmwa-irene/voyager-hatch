@@ -1,4 +1,5 @@
 <?php
+require_once('modules/Teams/TeamSet.php');
 class BeforeSaveValidation
 {
     /**
@@ -11,7 +12,25 @@ class BeforeSaveValidation
     {
         $this->bean = $bean;
 
-        $this->autoCompleteFields();
+        $not_admin = $this->checkSuperUser();
+//        if($is_admin && ($this->bean->fetched_row['assigned_user_id'] == $this->bean->assigned_user_id)){
+        if(!$this->bean->fetched_row && $not_admin){
+            $this->autoCompleteFields();
+        }
+    }
+
+    public function checkSuperUser() {
+        global $current_user;
+        $teamSetBean = new TeamSet();
+        $teams = $teamSetBean->getTeams($current_user->team_set_id);
+
+        foreach ($teams as $value){
+            if($value->name =='Super User' || $current_user->is_admin || $value->name =='Sales Manager'){
+                return false;
+            }
+        }
+
+        return true;
     }
 
     public function autoCompleteFields() {

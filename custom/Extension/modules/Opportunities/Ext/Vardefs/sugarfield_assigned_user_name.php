@@ -1,2 +1,2 @@
 <?php
-$dictionary['Opportunity']['fields']['assigned_user_name']['readonly']=true;
+$dictionary['Opportunity']['fields']['assigned_user_name']['readonly']=false;
