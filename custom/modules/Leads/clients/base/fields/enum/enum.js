@@ -35,6 +35,14 @@
             this.items = lead_cluster_list;
         }
 
+        if (this.name == 'status' && this.model.get('status') != 'Converted') {
+            this.items = {
+                '': '',
+                'New': 'Not Attempted',
+                'Attempted': 'Attempted',
+            }
+        }
+
         this._options = app.lang.getAppListStrings('lead_cluster_list');
         this.model.on('change:industry', _.bind(this.render, this), this);
     },
@@ -42,6 +50,14 @@
         if (this.name == 'cluster' && this.is_super_user) {
             var lead_cluster_list = app.lang.getAppListStrings('lead_cluster_list');
             this.items = lead_cluster_list;
+        }
+
+        if (this.name == 'status' && this.model.get('status') != 'Converted') {
+            this.items = {
+                '': '',
+                'New': 'Not Attempted',
+                'Attempted': 'Attempted',
+            }
         }
 
         this._super('render');
