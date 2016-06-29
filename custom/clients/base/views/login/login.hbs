@@ -1,0 +1,43 @@
+<div class="welcome" xmlns="http://www.w3.org/1999/html">
+    <div class="thumbnail login">
+        <a href="http://crm.voyager.ph">
+            <div class="alert alert-danger">
+                <h3 class="alert-heading">Notice!</h3>
+                <h4 class="alert-heading">
+                    We've launched the VBiz SugarCRM into production. Please visit <u><strong>crm.voyager.ph</strong></u> to continue managing your accounts.
+                </h4>
+                <br>
+            </div>
+        </a>
+        <div class="tcenter">
+            <h2 class="brand"><img src="{{logoUrl}}" alt="SugarCRM"></h2>
+        </div>
+        <form name='{{name}}' class="tcenter">
+        {{#if externalLoginForm}}
+            <p>&nbsp;</p>
+            <p class="wide">
+                <a class="btn btn-block btn-primary" name="external_login_button" title="{{str "LBL_LOGIN_BUTTON_LABEL"}}">{{str "LBL_LOGIN_BUTTON_LABEL"}}</a>
+            </p>
+            <p class="wide">
+                <a class="btn btn-link btn-invisible" name="login_form_button" title="{{str "LBL_LOGIN_FORM_LABEL"}}">{{str "LBL_LOGIN_FORM_LABEL"}}</a>
+            </p>
+        {{else}}  
+            {{#each meta.panels}}
+                {{#each fields}}
+                <div class="control-group">{{field ../../this model=../../model}}</div>
+                {{/each}}
+                <p class="help-block">
+                    {{#if ../showPasswordReset}}
+                        <a href="#forgotpassword" class="btn btn-link btn-invisible">{{str "LBL_LOGIN_FORGOT_PASSWORD"}}</a>
+                    {{/if}}
+                </p>
+            {{/each}}
+            <div class="login-footer">
+                {{#each meta.buttons}}
+                {{field ../this model=../model}}
+                {{/each}}
+            </div>
+        {{/if}}
+        </form>
+    </div>
+</div>
