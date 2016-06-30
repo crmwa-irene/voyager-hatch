@@ -1,7 +1,7 @@
 <?php
 require_once('modules/Teams/Team.php');
 require_once('modules/Teams/TeamSet.php');
-class BeforeSaveValidation
+class BeforeSaveValidationAccount
 {
     /**
      * @param $bean
@@ -9,7 +9,7 @@ class BeforeSaveValidation
      * @param $arguments
      * @throws SugarApiExceptionInvalidParameter
      */
-    public function ValidateRecord($bean, $event, $arguments)
+    public function ValidateAccountRecord($bean, $event, $arguments)
     {
         global $current_user;
         $newrecord_samecluster = false;
