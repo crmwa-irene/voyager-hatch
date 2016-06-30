@@ -2,7 +2,7 @@
  // created: 2016-05-30 00:57:34
 $dictionary['Opportunity']['fields']['probability']['massupdate']=false;
 $dictionary['Opportunity']['fields']['probability']['comments']='The probability of closure';
-$dictionary['Opportunity']['fields']['probability']['importable']='false';
+$dictionary['Opportunity']['fields']['probability']['importable']='true';
 $dictionary['Opportunity']['fields']['probability']['duplicate_merge']='disabled';
 $dictionary['Opportunity']['fields']['probability']['duplicate_merge_dom_value']=0;
 $dictionary['Opportunity']['fields']['probability']['merge_filter']='disabled';
