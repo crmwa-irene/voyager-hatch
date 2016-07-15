@@ -16,12 +16,22 @@ class BeforeSaveValidationContact
 
         $not_admin = $this->checkSuperUser($current_user);
 
-        if($this->bean->fetched_row['assigned_user_id'] != $this->bean->assigned_user_id && $not_admin){
-            if($current_user->id != $this->bean->assigned_user_id){
-                $team_list = $this->retrieveStaffID($current_user->team_set_id);
-                $this->checkIfSameCluster($this->bean->assigned_user_id, $team_list);
+        if($not_admin){
+            if($this->bean->fetched_row['assigned_user_id'] != $this->bean->assigned_user_id){
+                if(!$this->bean->fetched_row){
+                    $this->bean->assigned_user_id = $current_user->id;
+                }else{
+                    $this->bean->assigned_user_id = $this->bean->fetched_row['assigned_user_id'];
+                }
             }
         }
+
+//        if($this->bean->fetched_row['assigned_user_id'] != $this->bean->assigned_user_id && $not_admin){
+//            if($current_user->id != $this->bean->assigned_user_id){
+//                $team_list = $this->retrieveStaffID($current_user->team_set_id);
+//                $this->checkIfSameCluster($this->bean->assigned_user_id, $team_list);
+//            }
+//        }
     }
 
     public function retrieveStaffID($teamset_id) {

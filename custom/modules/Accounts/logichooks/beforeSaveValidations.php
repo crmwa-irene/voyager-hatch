@@ -18,30 +18,43 @@ class BeforeSaveValidationAccount
 
         $not_admin = $this->checkSuperUser();
 
-        if(!$this->bean->fetched_row || $this->bean->fetched_row['cluster'] != $this->bean->cluster){
-            if($this->checkIfSameCluster($current_user->id)){
-                $this->bean->assigned_user_id = $current_user->id;
-                $newrecord_samecluster = true;
-            }
-            if($not_admin && !$newrecord_samecluster){
-                $autocompleted = true;
-                $this->autoCompleteFields();
+        if($not_admin){
+            if($this->bean->fetched_row['assigned_user_id'] != $this->bean->assigned_user_id){
+                if(!$this->bean->fetched_row){
+                    $this->bean->assigned_user_id = $current_user->id;
+
+                }else{
+                    $this->bean->assigned_user_id = $this->bean->fetched_row['assigned_user_id'];
+                }
             }
         }
 
-        if($this->bean->fetched_row['assigned_user_id'] != $this->bean->assigned_user_id && $not_admin){
-            $user_samecluster = $this->checkClusterHead($current_user->team_set_id);
-            $AM_sameCluster = $this->checkIfSameCluster($this->bean->assigned_user_id);
-            if($user_samecluster){
-                if(!$AM_sameCluster){
-                    throw new SugarApiExceptionInvalidParameter("Account manager is not assigned to this cluster. Please check and try again.");
-                }
-            }else{
-                if($this->bean->fetched_row['cluster'] == $this->bean->cluster && !$autocompleted){
-                    throw new SugarApiExceptionInvalidParameter("Account Manager cannot be reassigned if you're not on this cluster.");
-                }
-            }
-        }
+//        if(!$this->bean->fetched_row || $this->bean->fetched_row['cluster'] != $this->bean->cluster){
+//            if($this->checkIfSameCluster($current_user->id)){
+//                $this->bean->assigned_user_id = $current_user->id;
+//                $newrecord_samecluster = true;
+//            }
+//            $isadmin_changecluster = ($this->bean->fetched_row && ($this->bean->fetched_row['cluster'] != $this->bean->cluster));
+//            $is_new_sameuser = (!$this->bean->fetched_row && ($current_user->id == $this->bean->assigned_user_id));
+//            if(($not_admin && !$newrecord_samecluster) || (!$not_admin && ($isadmin_changecluster || $is_new_sameuser))){
+//                $autocompleted = true;
+//                $this->autoCompleteFields();
+//            }
+//        }
+//
+//        if($this->bean->fetched_row['assigned_user_id'] != $this->bean->assigned_user_id && $not_admin){
+//            $user_samecluster = $this->checkClusterHead($current_user->team_set_id);
+//            $AM_sameCluster = $this->checkIfSameCluster($this->bean->assigned_user_id);
+//            if($user_samecluster){
+//                if(!$AM_sameCluster){
+//                    throw new SugarApiExceptionInvalidParameter("Account manager is not assigned to this cluster. Please check and try again.");
+//                }
+//            }else{
+//                if($this->bean->fetched_row['cluster'] == $this->bean->cluster && !$autocompleted){
+//                    throw new SugarApiExceptionInvalidParameter("Account Manager cannot be reassigned if you're not on this cluster.");
+//                }
+//            }
+//        }
     }
 
     /**

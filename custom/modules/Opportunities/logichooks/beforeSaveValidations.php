@@ -1,6 +1,7 @@
 <?php
 require_once('modules/Teams/Team.php');
 require_once('modules/Teams/TeamSet.php');
+require_once('custom/modules/custom_hatch_utils.php');
 class BeforeSaveValidationOpp
 {
     /**
@@ -12,17 +13,33 @@ class BeforeSaveValidationOpp
     public function ValidateOppRecord($bean, $event, $arguments)
     {
         global $current_user;
+        $hatchUtils = new customHatchUtils;
         $this->bean = $bean;
 
-        $not_admin = $this->checkSuperUser($current_user);
+        $not_admin = $hatchUtils->checkSuperUser($current_user);
+        if($not_admin || empty($this->bean->business_cluster) || (!$not_admin && $this->bean->fetched_row['assigned_user_id'] != $this->bean->assigned_user_id)){
+            $this->bean->business_cluster = $hatchUtils->checkBusinessCluster($this->bean->assigned_user_id);
+        }
 
-        if($this->bean->fetched_row['assigned_user_id'] != $this->bean->assigned_user_id && $not_admin){
-            if($current_user->id != $this->bean->assigned_user_id){
-                $team_list = $this->retrieveStaffID($current_user->team_set_id);
-                $this->checkIfSameCluster($this->bean->assigned_user_id, $team_list);
+        if($not_admin){
+            if($this->bean->fetched_row['assigned_user_id'] != $this->bean->assigned_user_id){
+                if(!$this->bean->fetched_row){
+                    $this->bean->assigned_user_id = $current_user->id;
+                }else{
+                    $this->bean->assigned_user_id = $this->bean->fetched_row['assigned_user_id'];
+                }
             }
         }
+
+//        if($this->bean->fetched_row['assigned_user_id'] != $this->bean->assigned_user_id && $not_admin){
+//            if($current_user->id != $this->bean->assigned_user_id){
+//                $team_list = $this->retrieveStaffID($current_user->team_set_id);
+//                $this->checkIfSameCluster($this->bean->assigned_user_id, $team_list);
+//            }
+//        }
     }
+
+    
 
     public function retrieveStaffID($teamset_id) {
         $staff = array();
@@ -70,16 +87,4 @@ class BeforeSaveValidationOpp
         throw new SugarApiExceptionInvalidParameter("Account Manager is not assigned to your cluster. Please check and try again.");
     }
 
-    public function checkSuperUser($current_user) {
-        $teamSetBean = new TeamSet();
-        $teams = $teamSetBean->getTeams($current_user->team_set_id);
-
-        foreach ($teams as $value){
-            if($value->name =='Super User' || $current_user->is_admin){
-                return false;
-            }
-        }
-
-        return true;
-    }
 }
