@@ -239,32 +239,28 @@ array (
                 'placeholder' => 'LBL_PLEASE_SPECIFY',
                 'label' => 'LBL_EMPL_TRADESHOW_NAME',
               ),
-              8 => 
-              array (
-                'name' => 'industry',
-                'studio' => 'visible',
-                'label' => 'LBL_INDUSTRY',
-              ),
+              8 => 'status',
               9 => 
-              array (
-                'name' => 'priority_merged_industries',
-                'studio' => 'visible',
-                'label' => 'LBL_PRIORITY_MERGED_INDUSTRIES',
-              ),
-              10 => 
-              array (
-                'name' => 'cluster',
-                'studio' => 'visible',
-                'label' => 'LBL_CLUSTER',
-              ),
-              11 => 
               array (
                 'name' => 'media_agency',
                 'studio' => 'visible',
                 'label' => 'LBL_MEDIA_AGENCY',
               ),
-              12 => 'status',
-              13 => 
+              10 => 
+              array (
+                'name' => 'business_cluster',
+                'studio' => 'visible',
+                'readonly' => false,
+                'label' => 'LBL_BUSINESS_CLUSTER',
+              ),
+              11 => 
+              array (
+                'name' => 'crm_group',
+                'studio' => 'visible',
+                'readonly' => false,
+                'label' => 'LBL_CRM_GROUP',
+              ),
+              12 => 
               array (
                 'name' => 'description',
                 'span' => 12,

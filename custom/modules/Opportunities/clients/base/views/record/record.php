@@ -218,7 +218,20 @@ array (
                 'span' => 6,
               ),
               6 => 'assigned_user_name',
-              7 => 'next_step',
+              7 => 
+              array (
+                'name' => 'next_step',
+              ),
+              8 => 
+              array (
+                'name' => 'business_cluster',
+                'studio' => 'visible',
+                'readonly' => false,
+                'label' => 'LBL_BUSINESS_CLUSTER',
+              ),
+              9 => 
+              array (
+              ),
             ),
           ),
         ),

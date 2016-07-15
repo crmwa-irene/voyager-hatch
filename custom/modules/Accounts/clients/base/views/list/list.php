@@ -26,19 +26,27 @@ array (
               ),
               1 => 
               array (
+                'name' => 'crm_group',
+                'label' => 'LBL_CRM_GROUP',
+                'enabled' => true,
+                'readonly' => false,
+                'default' => true,
+              ),
+              2 => 
+              array (
                 'name' => 'email',
                 'label' => 'LBL_EMAIL_ADDRESS',
                 'enabled' => true,
                 'default' => true,
               ),
-              2 => 
+              3 => 
               array (
                 'name' => 'phone_office',
                 'label' => 'LBL_LIST_PHONE',
                 'enabled' => true,
                 'default' => true,
               ),
-              3 => 
+              4 => 
               array (
                 'name' => 'assigned_user_name',
                 'label' => 'LBL_LIST_ASSIGNED_USER',
@@ -46,13 +54,13 @@ array (
                 'enabled' => true,
                 'default' => true,
               ),
-              4 => 
+              5 => 
               array (
                 'name' => 'date_modified',
                 'enabled' => true,
                 'default' => true,
               ),
-              5 => 
+              6 => 
               array (
                 'name' => 'date_entered',
                 'type' => 'datetime',
@@ -61,14 +69,14 @@ array (
                 'default' => true,
                 'readonly' => true,
               ),
-              6 => 
+              7 => 
               array (
                 'name' => 'billing_address_country',
                 'label' => 'LBL_BILLING_ADDRESS_COUNTRY',
                 'enabled' => true,
                 'default' => false,
               ),
-              7 => 
+              8 => 
               array (
                 'name' => 'billing_address_city',
                 'label' => 'LBL_LIST_CITY',
