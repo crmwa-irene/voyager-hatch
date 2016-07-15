@@ -6,6 +6,11 @@ $app_list_strings['lead_cluster_list']['3'] = '3';
 $app_list_strings['lead_cluster_list']['4'] = '4';
 $app_list_strings['lead_cluster_list']['5'] = '5';
 
+$app_list_strings['lead_businesscluster_list'][''] = '';
+$app_list_strings['lead_businesscluster_list']['1'] = '1';
+$app_list_strings['lead_businesscluster_list']['2'] = '2';
+$app_list_strings['lead_businesscluster_list']['3'] = '3';
+
 $app_list_strings['lead_industries_list'] = array();
 $app_list_strings['lead_industries_list']['Bank'] = 'Bank';
 $app_list_strings['lead_industries_list']['FinancialInstitution'] = 'Financial Institution';
@@ -146,3 +151,14 @@ $app_list_strings['custom_lead_status_dom'][''] = '';
 $app_list_strings['custom_lead_status_dom']['New'] = 'Not Attempted';
 $app_list_strings['custom_lead_status_dom']['Attempted'] = 'Attempted';
 $app_list_strings['custom_lead_status_dom']['Converted'] = 'Converted';
+
+$app_list_strings['crm_group_list'] = array();
+$app_list_strings['crm_group_list'][''] = '';
+$app_list_strings['crm_group_list']['CRMA'] = 'CRM A (Banking)';
+$app_list_strings['crm_group_list']['CRMB'] = 'CRM B (Conglomerates)';
+$app_list_strings['crm_group_list']['CRMC'] = 'CRM C (BPO)';
+$app_list_strings['crm_group_list']['CRMD'] = 'CRM D (BPO)';
+$app_list_strings['crm_group_list']['CRME'] = 'CRM E (Retail & FMCG)';
+$app_list_strings['crm_group_list']['CRMF'] = 'CRM F (Regional)';
+$app_list_strings['crm_group_list']['CRMG'] = 'CRM G (Government)';
+$app_list_strings['crm_group_list']['MediaAgency'] = 'Media Agency';

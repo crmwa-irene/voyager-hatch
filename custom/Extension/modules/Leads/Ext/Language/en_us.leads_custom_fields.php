@@ -16,3 +16,5 @@ $mod_strings['LBL_PRIORITY_MERGED_INDUSTRIES'] = 'Priority Merged Industries';
 $mod_strings['LBL_EMPL_TRADESHOW_NAME'] = 'Lead Source Name';
 $mod_strings['LBL_MEDIA_AGENCY'] = 'Media Agency';
 $mod_strings['LBL_PLEASE_SPECIFY'] = 'Please Specify...';
+$mod_strings['LBL_BUSINESS_CLUSTER'] = 'Business Cluster';
+$mod_strings['LBL_CRM_GROUP'] = 'CRM Group';
