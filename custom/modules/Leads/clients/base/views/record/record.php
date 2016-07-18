@@ -239,13 +239,14 @@ array (
                 'placeholder' => 'LBL_PLEASE_SPECIFY',
                 'label' => 'LBL_EMPL_TRADESHOW_NAME',
               ),
-              8 => 'status',
-              9 => 
+              8 => 
               array (
-                'name' => 'media_agency',
+                'name' => 'industry',
                 'studio' => 'visible',
-                'label' => 'LBL_MEDIA_AGENCY',
+                'readonly' => false,
+                'label' => 'LBL_INDUSTRY',
               ),
+              9 => 'status',
               10 => 
               array (
                 'name' => 'business_cluster',

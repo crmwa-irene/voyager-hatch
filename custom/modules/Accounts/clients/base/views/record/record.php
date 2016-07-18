@@ -182,16 +182,23 @@ array (
             array (
               0 => 'website',
               1 => 'parent_name',
-              2 => 'phone_office',
-              3 => 'email',
-              4 => 
+              2 => 
+              array (
+                'name' => 'industry',
+              ),
+              3 => 
+              array (
+              ),
+              4 => 'phone_office',
+              5 => 'email',
+              6 => 
               array (
                 'name' => 'crm_group',
                 'studio' => 'visible',
                 'readonly' => false,
                 'label' => 'LBL_CRM_GROUP',
               ),
-              5 => 'assigned_user_name',
+              7 => 'assigned_user_name',
             ),
           ),
         ),
